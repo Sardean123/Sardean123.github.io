@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethics Project</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #1a1d21;
+            color: #ffffff;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #1a1d21;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #3b82f6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .project-section {
+            background-color: #262b32;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .materials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .material-card {
+            background-color: #1a1d21;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .material-card h3 {
+            color: #3b82f6;
+            margin-top: 0;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+        }
+
+        .button:hover {
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">About</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#skills">Skills</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h1>Ethics Project</h1>
+
+        <div class="project-section">
+            <h2>Project Overview</h2>
+            <p>An exploration of ethical considerations in artificial intelligence and data science, focusing on current challenges and future implications.</p>
+            
+            <div class="materials-grid">
+                <div class="material-card">
+                    <h3>Project Notebooks</h3>
+                    <p>Jupyter notebooks containing analysis and research findings.</p>
+                    <a href="notebooks/ethics_analysis.ipynb" class="button">View Notebook</a>
+                </div>
+
+                <div class="material-card">
+                    <h3>Research Papers</h3>
+                    <p>Collection of relevant research papers and literature review.</p>
+                    <a href="papers/ethics_research.pdf" class="button">View Papers</a>
+                </div>
+
+                <div class="material-card">
+                    <h3>Presentations</h3>
+                    <p>Project presentations and slides showcasing key findings.</p>
+                    <a href="presentations/ethics_presentation.pdf" class="button">View Slides</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Key Findings</h2>
+            <p>Summary of the main insights and conclusions from the ethics project...</p>
+            <!-- Add your project findings here -->
+        </div>
+    </div>
+</body>
+</html>
