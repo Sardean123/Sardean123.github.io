@@ -150,6 +150,23 @@
         .section-spacing {
             margin-bottom: 3rem;
         }
+
+        /* New styles for better project section formatting */
+        .featured-projects {
+            margin-bottom: 4rem;
+        }
+
+        .other-projects {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 2px solid var(--secondary-color);
+        }
+
+        .projects-section h2 {
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: var(--accent-color);
+        }
     </style>
 </head>
 <body>
@@ -176,115 +193,91 @@
         </section>
 
         <section id="projects">
-            <h2>Featured Projects</h2>
-            <div class="projects">
+            <!-- Featured Projects Section -->
+            <div class="featured-projects projects-section">
+                <h2>Featured Projects</h2>
+                <div class="projects">
+                    <div class="project-card">
+                        <h3>Mechanistic Interpretability - ResNet</h3>
+                        <p>Project exploring how a custom-trained residual CNN learns interpretable features and classifies images from the CIFAR10 dataset. Analyzed feature learning heirarchies and circuits through activation visualization.</p>
+                        <p><strong>Skills:</strong> Python, PyTorch, Feature Visualization, CNN, Residual Networks</p>
+                        <div class="project-links">
+                            <a href="https://colab.research.google.com/drive/1ndqtfc63rUIbI5jheNmuaJMEkuSoVP0Y#scrollTo=Vk5l6lQ7Vy4W" class="button">View Colab Notebook</a>
+                        </div>
+                    </div>
 
-                <div class="project-card">
-                    <h3>Mechanistic Interpretability - ResNet</h3>
-                    <p>Project exploring how a custom-trained residual CNN learns interpretable features and classifies images from the CIFAR10 dataset. Analyzed feature learning heirarchies and circuits through activation visualization.</p>
-                    <p><strong>Skills:</strong> Python, PyTorch, Feature Visualization, CNN, Residual Networks</p>
-                    <div class="project-links">
-                        <a href="https://colab.research.google.com/drive/1ndqtfc63rUIbI5jheNmuaJMEkuSoVP0Y#scrollTo=Vk5l6lQ7Vy4W" class="button">View Colab Notebook</a>
-                        </a>
+                    <div class="project-card">
+                        <h3>Facial Tracking Research</h3>
+                        <p>A research project with the UChicago EMK Lab using geometric facial tracking meshes to analyze conversational facial interactions</p>
+                        <p><strong>Skills:</strong> Python, Data Preprocessing, MediaPipe, PCA</p>
+                        <div class="project-links">
+                            <a href="https://colab.research.google.com/drive/1APZkPzazrDMbVNslWQcZAer9qE327vb-?authuser=1#scrollTo=kby9l6I8MTBE" class="button">View Colab Notebook</a>
+                        </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="project-card">
-                    <h3>Facial Tracking Research</h3>
-                    <p>A research project with the UChicago EMK Lab using geometric facial tracking meshes to analyze conversational facial interactions</p>
-                    <p><strong>Skills:</strong> Python, Data Preprocessing, MediaPipe, PCA</p>
-                    <div class="project-links">
-                        <a href="https://colab.research.google.com/drive/1APZkPzazrDMbVNslWQcZAer9qE327vb-?authuser=1#scrollTo=kby9l6I8MTBE" class="button">View Colab Notebook</a>
-                        </a>
+            <!-- Other Projects Section -->
+            <div class="other-projects projects-section">
+                <h2>Other Projects</h2>
+                <div class="projects">
+                    <div class="project-card">
+                        <h3>LLM Political Biases</h3>
+                        <p>A project fine-tuning LLMs on FOX/CNN data to explore ease of model biases.</p>
+                        <p><strong>Skills:</strong> Python, LLMs, Fine-Tuning</p>
+                        <div class="project-links">
+                            <a href="https://sardean123.github.io/projects/ethics_project/materials.html" class="button">View Project Materials</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Retrieval Augmented Generation Demo</h3>
+                        <p>A project implementing a RAG framework for document information retrieval and synthesis.</p>
+                        <p><strong>Skills:</strong> Python, LLMs, RAG, LlamaIndex</p>
+                        <div class="project-links">
+                            <a href="https://colab.research.google.com/drive/17X-0jcsjITUHzEjyasgQH-2N8ttQ4WnL#scrollTo=7UYLTm3wYqDz" class="button">View Colab Notebook</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Graph Neural Network</h3>
+                        <p>An exploratory GNN project analyzing the arxiv research paper dataset.</p>
+                        <p><strong>Skills:</strong> Python, PyTorch, PyTorch Geometric, Deep Learning, GNN</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/GNN.ipynb" class="button">View Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Neural Signal Clustering and Gaussian Mixture Models</h3>
+                        <p>A project exploring clustering methods on neural signal data such as KMeans and PCA-assisted KMeans. Additionally explores use of same techniques on mnist digits dataset.</p>
+                        <p><strong>Skills:</strong> KMeans, PCA, SVD, Neural Data</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/Clustering_Neural_Signals_MNIST.ipynb" class="button">View Code</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Image Compression and Dimensionality Reduction</h3>
+                        <p>A project exploring Singular Value Decomposition and its use in compressing image file sizes.</p>
+                        <p><strong>Skills:</strong> Python, Linear Algebra, SVD</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/Image_Compression_SVD.ipynb" class="button">View Code</a>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Andrej Karpathy Makemore Series</h3>
+                        <p>A series of projects learning from Andrej Karpathy's Makemore series exploring deep learning and language modeling</p>
+                        <p><strong>Skills:</strong> Python, NLP, Deep Learning, Neural Networks, Transformers</p>
+                        <div class="project-links">
+                            <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/makemore.ipynb" class="button">Makemore1</a>
+                            <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/makemore2.ipynb" class="button">Makemore2</a>
+                            <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/makemore3.ipynb" class="button">Makemore3</a>
+                            <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/names.txt" class="button">Names Data</a>
+                        </div>
                     </div>
                 </div>
-        
-            <h2>Other Projects</h2>
-            <div class="projects">
-
-                <div class="project-card">
-                    <h3>LLM Political Biases</h3>
-                    <p>A project fine-tuning LLMs on FOX/CNN data to explore ease of model biases.</p>
-                    <p><strong>Skills:</strong> Python, LLMs, Fine-Tuning</p>
-                    <div class="project-links">
-                        <a href="https://sardean123.github.io/projects/ethics_project/materials.html" class="button">View Project Materials</a>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Retrieval Augmented Generation Demo</h3>
-                    <p>A project implementing a RAG framework for document information retrieval and synthesis.</p>
-                    <p><strong>Skills:</strong> Python, LLMs, RAG, LlamaIndex</p>
-                    <div class="project-links">
-                        <a href="https://colab.research.google.com/drive/17X-0jcsjITUHzEjyasgQH-2N8ttQ4WnL#scrollTo=7UYLTm3wYqDz" class="button">View Colab Notebook</a>
-                    </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h3>Graph Neural Network</h3>
-                    <p>An exploratory GNN project analyzing the arxiv research paper dataset.</p>
-                    <p><strong>Skills:</strong> Python, PyTorch, PyTorch Geometric, Deep Learning, GNN</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/GNN.ipynb" class="button">View Code</a>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- <div class="project-card">
-                    <h3>Image Classifier</h3>
-                    <p>A deep learning project classifying images from MNIST and CIFAR-10 datasets using convolutional neural networks.</p>
-                    <p><strong>Skills:</strong> Python, PyTorch, CNN</p>
-                    <div class="project-links">
-                        <a href="https://colab.research.google.com/drive/1GbK2Z3ZRKVTBF1DeOipoc50sNC4ZwODb?authuser=1#scrollTo=lH2Uk3VyOb_e" class="button">View Colab Notebook</a>
-                        </a>
-                    </div>
-                </div> -->
-                
-                <div class="project-card">
-                    <h3>Neural Signal Clustering and Gaussian Mixture Models</h3>
-                    <p>A project exploring clustering methods on neural signal data such as KMeans and PCA-assisted KMeans. Additionally explores use of same techniques on mnist digits dataset.</p>
-                    <p><strong>Skills:</strong> KMeans, PCA, SVD, Neural Data</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/Clustering_Neural_Signals_MNIST.ipynb" class="button">View Code</a>
-                    </a>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <h3>Image Compression and Dimensionality Reduction</h3>
-                    <p>A project exploring Singular Value Decomposition and its use in compressing image file sizes.</p>
-                    <p><strong>Skills:</strong> Python, Linear Algebra, SVD</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/Image_Compression_SVD.ipynb" class="button">View Code</a>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- <div class="project-card">
-                    <h3>Variational Autoencoder</h3>
-                    <p>A project exploring mnist digit generation using a variational autoencoder.</p>
-                    <p><strong>Skills:</strong> Python, VAE, FID, Gaussian Mixture Models </p>
-                    <div class="project-links">
-                        <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/VAE.ipynb" class="button">View Code</a>
-                        </a>
-                    </div>
-                </div> -->
-
-                <div class="project-card">
-                    <h3>Andrej Karpathy Makemore Series</h3>
-                    <p>A series of projects learning from Andrej Karpathy's Makemore series exploring deep learning and language modeling</p>
-                    <p><strong>Skills:</strong> Python, NLP, Deep Learning, Neural Networks, Transformers</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/makemore.ipynb" class="button">Makemore1</a>
-                        <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/makemore2.ipynb" class="button">Makemore2</a>
-                        <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/makemore3.ipynb" class="button">Makemore3</a>
-                        <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/names.txt" class="button">Names Data</a>
-                        </a>
-                    </div>
-                </div>
-
             </div>
         </section>
 
@@ -292,15 +285,16 @@
             <h2>Technical Skills</h2>
             <div class="skill-tags">
                 <span class="skill-tag">Python</span>
+                <span class="skill-tag">PyTorch</span>
                 <span class="skill-tag">Machine Learning</span>
                 <span class="skill-tag">Deep Learning</span>
                 <span class="skill-tag">Computer Vision</span>
                 <span class="skill-tag">RNNs</span>
                 <span class="skill-tag">GNNs</span>
+                <span class="skill-tag">CNNs</span>
                 <span class="skill-tag">RAG</span>
                 <span class="skill-tag">PCA</span>
                 <span class="skill-tag">Data Analysis</span>
-                <span class="skill-tag">PyTorch</span>
             </div>
         </section>
     </div>
