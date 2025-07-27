@@ -12,6 +12,7 @@
             --text-color: #c9d1d9;
             --accent-color: #58a6ff;
         }
+
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
             line-height: 1.6;
@@ -20,11 +21,13 @@
             background-color: var(--primary-color);
             color: var(--text-color);
         }
+
         header {
             background-color: var(--secondary-color);
             padding: 2rem;
             text-align: center;
         }
+
         nav {
             background-color: var(--secondary-color);
             padding: 1rem;
@@ -32,6 +35,7 @@
             top: 0;
             z-index: 100;
         }
+
         nav ul {
             list-style: none;
             padding: 0;
@@ -40,78 +44,94 @@
             justify-content: center;
             gap: 2rem;
         }
+
         nav a {
             color: var(--text-color);
             text-decoration: none;
             font-weight: 500;
         }
+
         nav a:hover {
             color: var(--accent-color);
         }
+
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
         }
+
         .profile {
             text-align: left;
             margin-bottom: 2rem;
         }
+
         .profile img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
             margin-bottom: 1rem;
         }
+
         .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
+
         .project-card {
             background-color: var(--secondary-color);
             border-radius: 8px;
             padding: 1.5rem;
             transition: transform 0.3s ease;
         }
+
         .project-card:hover {
             transform: translateY(-5px);
         }
+
         .project-card h3 {
             margin-top: 0;
             color: var(--accent-color);
         }
+
         .skills {
             margin-top: 3rem;
         }
+
         .skill-tags {
             display: flex;
             flex-wrap: wrap;
             gap: 1rem;
         }
+
         .skill-tag {
             background-color: var(--secondary-color);
             padding: 0.5rem 1rem;
             border-radius: 20px;
             font-size: 0.9rem;
         }
+
         footer {
             background-color: var(--secondary-color);
             text-align: center;
             padding: 2rem;
             margin-top: 3rem;
         }
+
         .social-links {
             display: flex;
             justify-content: center;
             gap: 2rem;
             margin-top: 1rem;
         }
+
         .social-links a {
             color: var(--text-color);
             font-size: 1.5rem;
         }
+
         .social-links a:hover {
             color: var(--accent-color);
         }
@@ -130,14 +150,18 @@
         .section-spacing {
             margin-bottom: 3rem;
         }
+
+        /* New styles for better project section formatting */
         .featured-projects {
             margin-bottom: 4rem;
         }
+
         .other-projects {
             margin-top: 4rem;
             padding-top: 2rem;
             border-top: 2px solid var(--secondary-color);
         }
+
         .projects-section h2 {
             margin-bottom: 1rem;
             font-size: 2rem;
@@ -191,7 +215,6 @@
                         </div>
                     </div>
 
-                    <div class="projects">
                     <div class="project-card">
                         <h3>LLM Political Biases</h3>
                         <p>A project fine-tuning LLMs on FOX/CNN data to explore ease of model biases.</p>
@@ -200,14 +223,13 @@
                             <a href="https://sardean123.github.io/projects/ethics_project/materials.html" class="button">View Project Materials</a>
                         </div>
                     </div>
-                    
                 </div>
             </div>
 
             <!-- Other Projects Section -->
             <div class="other-projects projects-section">
                 <h2>Other Projects</h2>
-
+                <div class="projects">
                     <div class="project-card">
                         <h3>Retrieval Augmented Generation Demo</h3>
                         <p>A project implementing a RAG framework for document information retrieval and synthesis.</p>
