@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karpathy Learning Series</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: #1a1d21;
+            color: #ffffff;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #1a1d21;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #3b82f6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .project-section {
+            background-color: #262b32;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .materials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .material-card {
+            background-color: #1a1d21;
+            border-radius: 8px;
+            padding: 1.5rem;
+        }
+
+        .material-card h3 {
+            color: #3b82f6;
+            margin-top: 0;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin: 0.25rem;
+            font-size: 0.9rem;
+        }
+
+        .button:hover {
+            background-color: #2563eb;
+        }
+
+        .subsection {
+            background-color: #1e2328;
+            border-radius: 6px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .subsection h4 {
+            color: #58a6ff;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+
+        .file-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://sardean123.github.io/">Home Page</a>
+    </nav>
+
+    <div class="container">
+        <h1>Andrej Karpathy Learning Series</h1>
+
+        <div class="project-section">
+            <h2>Project Overview</h2>
+            <p>A comprehensive series of projects following Andrej Karpathy's educational content, exploring deep learning fundamentals through hands-on implementation. This series covers both the makemore language modeling tutorials and GPT implementation from scratch, providing deep insights into neural networks, transformers, and language model architectures.</p>
+            <p><strong>Key Topics:</strong> Neural Networks, Language Modeling, Transformers, Backpropagation, Attention Mechanisms, Character-level Language Models</p>
+        </div>
+
+        <div class="project-section">
+            <h2>Project Components</h2>
+            
+            <div class="materials-grid">
+                <div class="material-card">
+                    <h3>Makemore Series</h3>
+                    <p>Following Karpathy's makemore tutorials to build character-level language models from scratch, progressing from simple models to more sophisticated architectures.</p>
+                    
+                    <div class="subsection">
+                        <h4>Notebooks</h4>
+                        <div class="file-list">
+                            <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/makemore.ipynb" class="button">Makemore Part 1</a>
+                            <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/makemore2.ipynb" class="button">Makemore Part 2</a>
+                            <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/makemore3.ipynb" class="button">Makemore Part 3</a>
+                        </div>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h4>Data</h4>
+                        <div class="file-list">
+                            <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/names.txt" class="button">Names Dataset</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="material-card">
+                    <h3>GPT Implementation</h3>
+                    <p>Building GPT (Generative Pre-trained Transformer) from scratch, implementing the complete architecture including attention mechanisms, positional encodings, and training loops.</p>
+                    
+                    <div class="subsection">
+                        <h4>Python Scripts</h4>
+                        <p>Core implementation files for the GPT architecture:</p>
+                        <div class="file-list">
+                            <a href="#" class="button">model.py</a>
+                            <a href="#" class="button">train.py</a>
+                            <a href="#" class="button">sample.py</a>
+                            <a href="#" class="button">data_loader.py</a>
+                            <a href="#" class="button">utils.py</a>
+                        </div>
+                        <p><em>Note: Update these links with your actual script paths</em></p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h4>Training Data</h4>
+                        <p>Text datasets used for training the language models:</p>
+                        <div class="file-list">
+                            <a href="#" class="button">shakespeare.txt</a>
+                            <a href="#" class="button">input.txt</a>
+                            <a href="#" class="button">tiny_shakespeare.txt</a>
+                        </div>
+                        <p><em>Note: Update these links with your actual data file paths</em></p>
+                    </div>
+                    
+                    <div class="subsection">
+                        <h4>Trained Models</h4>
+                        <p>Saved model checkpoints from training sessions:</p>
+                        <div class="file-list">
+                            <a href="#" class="button">model_checkpoint_1.pth</a>
+                            <a href="#" class="button">model_checkpoint_2.pth</a>
+                            <a href="#" class="button">final_model.pth</a>
+                            <a href="#" class="button">best_model.pth</a>
+                        </div>
+                        <p><em>Note: Update these links with your actual model file paths</em></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Learning Outcomes</h2>
+            <div class="materials-grid">
+                <div class="material-card">
+                    <h3>Technical Skills Developed</h3>
+                    <ul>
+                        <li>Neural network implementation from scratch</li>
+                        <li>Backpropagation and gradient computation</li>
+                        <li>Transformer architecture understanding</li>
+                        <li>Attention mechanism implementation</li>
+                        <li>Language model training and evaluation</li>
+                        <li>PyTorch tensor operations and optimization</li>
+                    </ul>
+                </div>
+                
+                <div class="material-card">
+                    <h3>Key Concepts Mastered</h3>
+                    <ul>
+                        <li>Character-level language modeling</li>
+                        <li>Embedding layers and positional encoding</li>
+                        <li>Multi-head self-attention</li>
+                        <li>Layer normalization and residual connections</li>
+                        <li>Autoregressive text generation</li>
+                        <li>Model training, validation, and sampling</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
