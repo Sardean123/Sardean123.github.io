@@ -3,221 +3,242 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dean Casey Portfolio</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <title>Dean Casey</title>
+    <meta name="description" content="Dean Casey — MS student in Computer Science at Columbia working on language model interpretability.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         :root {
-            --primary-color: #0d1117;
-            --secondary-color: #161b22;
-            --text-color: #c9d1d9;
-            --accent-color: #58a6ff;
+            --bg: #fdfcfa;
+            --text: #1f2328;
+            --muted: #5b6168;
+            --rule: #e6e2dc;
+            --accent: #1d4e89;
+            --accent-hover: #0f325c;
+            --figure-bg: #ffffff;
         }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #15171a;
+                --text: #e4e2de;
+                --muted: #9aa0a6;
+                --rule: #2c3036;
+                --accent: #8ab4f8;
+                --accent-hover: #b3cdfb;
+                --figure-bg: #f4f4f2;
+            }
+        }
+        * { box-sizing: border-box; }
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
             margin: 0;
-            padding: 0;
-            background-color: var(--primary-color);
-            color: var(--text-color);
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Source Serif 4', Georgia, 'Times New Roman', serif;
+            font-size: 1.125rem;
+            line-height: 1.65;
         }
-        header {
-            background-color: var(--secondary-color);
-            padding: 2rem;
-            text-align: center;
+        main {
+            max-width: 46rem;
+            margin: 0 auto;
+            padding: 4rem 1.5rem 3rem;
         }
-        nav {
-            background-color: var(--secondary-color);
-            padding: 1rem;
-            position: sticky;
-            top: 0;
-            z-index: 100;
+        a {
+            color: var(--accent);
+            text-decoration: none;
         }
-        nav ul {
+        a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
+        }
+        h1, h2, h3, .links, .meta, footer {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        }
+
+        /* Intro */
+        .intro {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 2.5rem;
+        }
+        .intro img {
+            width: 9rem;
+            height: 9rem;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        h1 {
+            font-size: 2.25rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+            margin: 0 0 0.25rem;
+        }
+        .role {
+            color: var(--muted);
+            margin: 0 0 0.75rem;
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.25rem 1.25rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* Sections */
+        h2 {
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--muted);
+            border-bottom: 1px solid var(--rule);
+            padding-bottom: 0.5rem;
+            margin: 3rem 0 1.5rem;
+        }
+        .item {
+            margin-bottom: 2.25rem;
+        }
+        h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            line-height: 1.35;
+            margin: 0 0 0.3rem;
+        }
+        .meta {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin: 0 0 0.6rem;
+        }
+        .item p {
+            margin: 0 0 0.6rem;
+        }
+        .item .links {
+            font-size: 0.9rem;
+        }
+        figure {
+            margin: 1rem 0 1rem;
+        }
+        figure img {
+            width: 100%;
+            height: auto;
+            display: block;
+            background: var(--figure-bg);
+            border: 1px solid var(--rule);
+            border-radius: 6px;
+            padding: 0.5rem;
+        }
+        figcaption {
+            font-size: 0.9rem;
+            color: var(--muted);
+            margin-top: 0.5rem;
+        }
+
+        /* Earlier projects */
+        .compact {
             list-style: none;
             padding: 0;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
         }
-        nav a {
-            color: var(--text-color);
-            text-decoration: none;
-            font-weight: 500;
-        }
-        nav a:hover {
-            color: var(--accent-color);
-        }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-        .profile {
-            text-align: left;
-            margin-bottom: 2rem;
-        }
-        .profile img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
+        .compact li {
             margin-bottom: 1rem;
         }
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 2rem;
+        .compact .year {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 0.85rem;
+            color: var(--muted);
         }
-        .project-card {
-            background-color: var(--secondary-color);
-            border-radius: 8px;
-            padding: 1.5rem;
-            transition: transform 0.3s ease;
-        }
-        .project-card:hover {
-            transform: translateY(-5px);
-        }
-        .project-card h3 {
-            margin-top: 0;
-            color: var(--accent-color);
-        }
+
         footer {
-            background-color: var(--secondary-color);
-            text-align: center;
-            padding: 2rem;
-            margin-top: 3rem;
-        }
-
-        .social-links {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            margin-top: 1rem;
-        }
-
-        .social-links a {
-            color: var(--text-color);
-            font-size: 1.5rem;
-        }
-
-        .social-links a:hover {
-            color: var(--accent-color);
-        }
-        .button {
-            display: inline-block;
-            background-color: #3b82f6;
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            text-decoration: none;
-            margin-top: 1rem;
-        }
-        .button:hover {
-            background-color: #2563eb;
-        }
-        .section-spacing {
-            margin-bottom: 3rem;
-        }
-        .featured-projects {
-            margin-bottom: 4rem;
-        }
-        .other-projects {
+            font-size: 0.85rem;
+            color: var(--muted);
+            border-top: 1px solid var(--rule);
             margin-top: 4rem;
-            padding-top: 2rem;
-            border-top: 2px solid var(--secondary-color);
+            padding-top: 1.25rem;
         }
-        .projects-section h2 {
-            margin-bottom: 1rem;
-            font-size: 2rem;
-            color: var(--accent-color);
+
+        @media (max-width: 560px) {
+            main { padding-top: 2.5rem; }
+            .intro {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.25rem;
+            }
+            .intro img { width: 7rem; height: 7rem; }
+            h1 { font-size: 1.9rem; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Dean Casey Portfolio</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <div class="container">
-        <section id="about" class="profile section-spacing">
-            <div style="text-align: center;">
-                <img src="images/Headshot.png" alt="Profile Picture">
+    <main>
+        <header class="intro">
+            <img src="images/Headshot.png" alt="Photo of Dean Casey">
+            <div>
+                <h1>Dean Casey</h1>
+                <p class="role">MS student in Computer Science, Columbia University</p>
+                <nav class="links">
+                    <!-- TODO: add email (e.g. <a href="mailto:...">Email</a>) and CV (<a href="cv.pdf">CV</a>) -->
+                    <a href="https://github.com/Sardean123">GitHub</a>
+                    <a href="https://www.linkedin.com/in/dean-casey-b764881b0">LinkedIn</a>
+                </nav>
             </div>
-            <h2 style="text-align: left;">About Me</h2>
-            <p style="text-align: left;">I'm a UChicago graduate (2024) who studied economics and data science. I am now pursuing an MS Thesis in computer science at Columbia under Professor John Hewitt, where I primarily work on activation verbalization methods for language model interpretability. I am broadly interested in studying the process of communication and how shared mapping functions can be utilized to distribute information. </p>
+        </header>
+
+        <section id="about">
+            <p>I'm an MS student in Computer Science at Columbia, writing my thesis with <a href="https://www.cs.columbia.edu/~johnhew/">John Hewitt</a> on activation verbalization methods for language model interpretability. More broadly, I'm interested in communication and studying how information is compressed, transmitted, and distributed between systems with shared mappings, whether those systems are neural networks or people.</p>
+            <p>Prior to Columbia, I studied economics and data science at the University of Chicago (2024).</p>
+        </section>
+
+        <section id="research">
+            <h2>Research</h2>
+
+            <div class="item">
+                <h3>Activation verbalization for language model interpretability</h3>
+                <p class="meta">MS thesis, advised by <a href="https://www.cs.columbia.edu/~johnhew/">John Hewitt</a> &middot; In progress</p>
+                <p>Evaluating and improving methods that attempt to translate language model activations directly into natural language. Primarily working on <a href="https://transformer-circuits.pub/2026/nla/">Natural Language Autoencoders</a>.</p>
+            </div>
+
+            <div class="item">
+                <h3>Information loss dynamics in iterative VLM&ndash;diffusion loops</h3>
+                <p class="meta">2025&ndash;2026</p>
+                <p>What survives when an image is repeatedly compressed into text and reconstructed? We caption COCO images with a vision-language model (LLaVA), regenerate each image from its caption with Stable Diffusion, and repeat the loop over many iterations, tracking drift in CLIP and sentence-embedding space. Trajectories sometimes fall into semantic attractors, with some (image, caption) pairs converging into stable states. K-means clusters of the embeddings generally tighten from one iteration to the next.</p>
+                <figure>
+                    <img src="images/vlm_loop.png" alt="Diagram of the loop: an image is captioned by a VLM, the caption conditions a diffusion model, and the generated image is fed back to the VLM.">
+                    <figcaption>The caption&rarr;image loop. Each generated image is fed back to the VLM for the next iteration.</figcaption>
+                </figure>
+                <div class="links">
+                    <a href="https://github.com/Sardean123/vlm-iterative-loss">Code</a>
+                </div>
+            </div>
         </section>
 
         <section id="projects">
-            <!-- Featured Projects Section -->
-            <div class="featured-projects projects-section">
-                <h2>Featured Projects</h2>
-
-                <div class="projects">
-                    <div class="project-card">
-                        <h3>Information Loss Dynamics in Iterative VLM/Diffusion Transformations</h3>
-                        <p>Project exploring how information is lost vs. preserved when transformed between images and text. We test this by captioning an image with a VLM, compressing the visual representation into a textual one. We then use the caption to condition an image generation through a diffusion model, and caption this new generated image. We compare the semantics between both the images and captions, and repeat this process over many iterations. We find that certain semantic attractors form, where image clusters get tighter with each iteration. (2025-2026)</p>
-                        <div class="project-links">
-                            <a href="https://github.com/Sardean123/vlm-iterative-loss" class="button">View Repo</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>Activation Visualization - ResNet</h3>
-                        <p>An early project inspired by Chris Olah's Circuits blogposts exploring how a custom-trained residual CNN learns interpretable features and classifies images from the CIFAR10 dataset. (2024-2025)</p>
-                        <div class="project-links">
-                            <a href="https://colab.research.google.com/drive/1ndqtfc63rUIbI5jheNmuaJMEkuSoVP0Y#scrollTo=Vk5l6lQ7Vy4W" class="button">View Colab Notebook</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Other Projects Section -->
-            <div class="other-projects projects-section">
-                <h2>Other Projects</h2>
-                <div class="projects">
-                    <div class="project-card">
-                        <h3>Interpretability - Superposition Hypothesis</h3>
-                        <p>Project recreating Anthropic's "Toy Superposition" paper, showcasing how ReLU pins layer activation spaces to the "privileged" model neuron basis.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/Sardean123/Sardean123.github.io/tree/main/projects/Superposition" class="button">View Project</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>Image Compression and Dimensionality Reduction</h3>
-                        <p>A project exploring Singular Value Decomposition and its use in compressing image file sizes.</p>
-                        <div class="project-links">
-                            <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/Image_Compression_SVD.ipynb" class="button">View Code</a>
-                        </div>
-                    </div>
-
-                    <div class="project-card">
-                        <h3>LLM Political Biases</h3>
-                        <p>A project fine-tuning LLMs on FOX/CNN data to explore ease of model biases. (2024)</p>
-                        <div class="project-links">
-                            <a href="projects/ethics_project/ethics_materials.html" class="button">View Project Materials</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2>Earlier projects</h2>
+            <ul class="compact">
+                <li>
+                    <a href="https://github.com/Sardean123/Sardean123.github.io/tree/main/projects/Superposition"><strong>Toy models of superposition</strong></a> <span class="year">2025</span><br>
+                    Reproduced Anthropic's toy superposition results, showing how a ReLU nonlinearity aligns representations with the privileged neuron basis.
+                </li>
+                <li>
+                    <a href="https://colab.research.google.com/drive/1ndqtfc63rUIbI5jheNmuaJMEkuSoVP0Y#scrollTo=Vk5l6lQ7Vy4W"><strong>Feature visualization in a residual CNN</strong></a> <span class="year">2024&ndash;25</span><br>
+                    Trained a ResNet on CIFAR-10 and visualized the features it learns, inspired by Chris Olah's Circuits work.
+                </li>
+                <li>
+                    <a href="projects/ethics_project/ethics_materials.html"><strong>Political bias in fine-tuned LLMs</strong></a> <span class="year">2024</span><br>
+                    Fine-tuned LLMs on FOX and CNN text to measure how easily a model's political slant can be shifted.
+                </li>
+                <li>
+                    <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/Image_Compression_SVD.ipynb"><strong>Image compression with SVD</strong></a> <span class="year">2023</span><br>
+                    Low-rank approximation of images via singular value decomposition.
+                </li>
+            </ul>
         </section>
-    </div>
 
-    <footer id="contact">
-        <h2>Contact</h2>
-        <div class="social-links">
-            <a href="https://github.com/Sardean123/Sardean123.github.io"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/dean-casey-b764881b0"><i class="fab fa-linkedin"></i></a>
-        </div>
-    </footer>
+        <footer>
+            &copy; 2026 Dean Casey
+        </footer>
+    </main>
 </body>
 </html>
