@@ -11,3 +11,10 @@ __pycache__/
 .ipynb_checkpoints/
 **/.DS_Store
 **/.ipynb_checkpoints/
+
+# Local-only archive of removed project cards
+archived_projects.html
+
+# Removed from the public site, kept locally
+projects/Karpathy/
+projects/notebooks/GNN.ipynb
