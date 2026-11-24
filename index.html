@@ -168,17 +168,18 @@
                 <img src="images/Headshot.png" alt="Profile Picture">
             </div>
             <h2 style="text-align: left;">About Me</h2>
-            <p style="text-align: left;">I'm a UChicago graduate (2024) who studied economics and data science. I am now pursuing an MS Thesis in computer science at Columbia, where I am interested in leveraging information theory & deep learning to better understand modern AI systems and the brain. I hope to do contribute research in the effor to enhance the communication process between humans. My dream would be to enable the transfer of high dimensional information directly between humans, reaching a sort of advanced telepathy.</p>
+            <p style="text-align: left;">I'm a UChicago graduate (2024) who studied economics and data science. I am now pursuing an MS Thesis in computer science at Columbia under Professor John Hewitt, where I primarily work on activation verbalization methods for language model interpretability. I am broadly interested in studying the process of communication and how shared mapping functions can be utilized to distribute information. </p>
         </section>
 
         <section id="projects">
             <!-- Featured Projects Section -->
             <div class="featured-projects projects-section">
                 <h2>Featured Projects</h2>
+
                 <div class="projects">
                     <div class="project-card">
                         <h3>Information Loss Dynamics in Iterative VLM/Diffusion Transformations</h3>
-                        <p>Project exploring how information is lost vs. preserved when transformed between images and text. We test this by captioning an image with a VLM, compressing the visual representation into a textual one. We then use the caption to condition an image generation through a diffusion model, and caption this new generated image. We compare the semantics between both the images and captions, and repeat this process over many iterations. We find that certain semantic attractor basins form, where image clusters get tighter with each iteration.</p>
+                        <p>Project exploring how information is lost vs. preserved when transformed between images and text. We test this by captioning an image with a VLM, compressing the visual representation into a textual one. We then use the caption to condition an image generation through a diffusion model, and caption this new generated image. We compare the semantics between both the images and captions, and repeat this process over many iterations. We find that certain semantic attractors form, where image clusters get tighter with each iteration. (2025-2026)</p>
                         <p><strong>Skills:</strong> Python, PyTorch, VLMs, Diffusion Models, Information Theory</p>
                         <div class="project-links">
                             <a href="https://github.com/Sardean123/vlm-iterative-loss" class="button">View Repo</a>
@@ -186,35 +187,35 @@
                     </div>
 
                     <div class="project-card">
-                        <h3>Mechanistic Interpretability - ResNet</h3>
-                        <p>Project exploring how a custom-trained residual CNN learns interpretable features and classifies images from the CIFAR10 dataset. Analyzed feature learning heirarchies and circuits through activation visualization.</p>
+                        <h3>Activation Visualization - ResNet</h3>
+                        <p>An early project inspired by Chris Olah's Circuits blogposts exploring how a custom-trained residual CNN learns interpretable features and classifies images from the CIFAR10 dataset. (2024-2025)</p>
                         <p><strong>Skills:</strong> Python, PyTorch, Feature Visualization, CNN, Residual Networks</p>
                         <div class="project-links">
                             <a href="https://colab.research.google.com/drive/1ndqtfc63rUIbI5jheNmuaJMEkuSoVP0Y#scrollTo=Vk5l6lQ7Vy4W" class="button">View Colab Notebook</a>
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <!-- <div class="project-card">
                         <h3>Facial Tracking Research</h3>
                         <p>A research project with the UChicago EMK Lab using geometric facial tracking meshes to analyze conversational facial interactions</p>
                         <p><strong>Skills:</strong> Python, Data Preprocessing, MediaPipe, PCA</p>
                         <div class="project-links">
                             <a href="https://colab.research.google.com/drive/1APZkPzazrDMbVNslWQcZAer9qE327vb-?authuser=1#scrollTo=kby9l6I8MTBE" class="button">View Colab Notebook</a>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="project-card">
+                    <!-- <div class="project-card">
                         <h3>Andrej Karpathy Learning Series</h3>
                         <p>A comprehensive series of projects following Andrej Karpathy's educational content, exploring deep learning fundamentals through hands-on implementation. Includes both the makemore language modeling tutorials and GPT implementation from scratch.</p>
                         <p><strong>Skills:</strong> Python, NLP, Deep Learning, Neural Networks, Transformers, PyTorch, Attention Mechanisms</p>
                         <div class="project-links">
                             <a href="projects/Karpathy/karpathy_materials.html" class="button">View Project Details</a>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="project-card">
                         <h3>LLM Political Biases</h3>
-                        <p>A project fine-tuning LLMs on FOX/CNN data to explore ease of model biases.</p>
+                        <p>A project fine-tuning LLMs on FOX/CNN data to explore ease of model biases. (2024)</p>
                         <p><strong>Skills:</strong> Python, LLMs, Fine-Tuning</p>
                         <div class="project-links">
                             <a href="projects/ethics_project/ethics_materials.html" class="button">View Project Materials</a>
@@ -228,7 +229,7 @@
                 <h2>Other Projects</h2>
                 <div class="projects">
                     <div class="project-card">
-                        <h3>Mechanistic Interpretability - Superposition Hypothesis</h3>
+                        <h3>Interpretability - Superposition Hypothesis</h3>
                         <p>Project recreating Anthropic's "Toy Superposition" paper, showcasing how ReLU pins layer activation spaces to the "privileged" model neuron basis.</p>
                         <p><strong>Skills:</strong> Python, PyTorch, Sparse AutoEncoder, Deep Learning</p>
                         <div class="project-links">
@@ -236,23 +237,23 @@
                         </div>
                     </div>
 
-                    <div class="project-card">
+                    <!-- <div class="project-card">
                         <h3>Retrieval Augmented Generation Demo</h3>
                         <p>A project implementing a RAG framework for document information retrieval and synthesis.</p>
                         <p><strong>Skills:</strong> Python, LLMs, RAG, LlamaIndex</p>
                         <div class="project-links">
                             <a href="https://colab.research.google.com/drive/17X-0jcsjITUHzEjyasgQH-2N8ttQ4WnL#scrollTo=7UYLTm3wYqDz" class="button">View Colab Notebook</a>
                         </div>
-                    </div>
+                    </div> -->
 
-                    <div class="project-card">
+                    <!-- <div class="project-card">
                         <h3>Graph Neural Network</h3>
                         <p>An exploratory GNN project analyzing the arxiv research paper dataset.</p>
                         <p><strong>Skills:</strong> Python, PyTorch, PyTorch Geometric, Deep Learning, GNN</p>
                         <div class="project-links">
                             <a href="https://github.com/Sardean123/Sardean123.github.io/blob/main/projects/notebooks/GNN.ipynb" class="button">View Code</a>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="project-card">
                         <h3>Neural Signal Clustering and Gaussian Mixture Models</h3>
@@ -283,14 +284,11 @@
                 <span class="skill-tag">Machine Learning</span>
                 <span class="skill-tag">Deep Learning</span>
                 <span class="skill-tag">Computer Vision</span>
-                <span class="skill-tag">Mechanistic Interpretability</span>
+                <span class="skill-tag">Interpretability</span>
                 <span class="skill-tag">SAEs</span>
                 <span class="skill-tag">RNNs</span>
-                <span class="skill-tag">GNNs</span>
                 <span class="skill-tag">CNNs</span>
-                <span class="skill-tag">RAG</span>
                 <span class="skill-tag">PCA</span>
-                <span class="skill-tag">Data Analysis</span>
             </div>
         </section>
     </div>
